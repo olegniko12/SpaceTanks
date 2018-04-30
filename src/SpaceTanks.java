@@ -24,7 +24,7 @@ public class SpaceTanks extends JFrame {
 		
 		setSize(width, height);
 		
-		Battlefield game = new Battlefield();
+		Battlefield game = new Battlefield(width, height);
 		
 		add(game);
 		

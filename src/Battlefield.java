@@ -12,10 +12,20 @@ import java.util.ArrayList;
 
 public class Battlefield extends Canvas implements KeyListener, Runnable
 {
-	public Battlefield(){
+	private int gameWidth;
+	private int gameHeight;
+	
+	private MainMenu mM;
+	
+	public Battlefield(int w, int h){
 		setBackground(Color.black);
-		
+		gameWidth = w;
+		gameHeight = h;
+		mM = new MainMenu();
+		mM.drawMenu(window, gameWidth, gameHeight);
 	}
+	
+	
 
 	@Override
 	public void run() {
